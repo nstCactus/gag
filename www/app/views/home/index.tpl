@@ -1,0 +1,1 @@
+{'ALL'|cms_blocks}

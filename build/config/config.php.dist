@@ -1,0 +1,66 @@
+<?php
+
+// SVN revision
+define('SVN_REVISION', '##SVN_REVISION##');
+
+define('BO_EDIT_NOTIFICATION_ENABLED', true);
+
+// Core
+define('CORE_DEBUG', ##CORE_DEBUG##);
+define('CORE_CACHE_DISABLE', ##CORE_CACHE_DISABLE##);
+define('CACHE_REQUEST_ENABLE', ##CACHE_REQUEST_ENABLE##);
+
+
+// Front office
+define('CONFIG_BASE_URL',   '##CONFIG_BASE_URL##');
+define('CONFIG_WEBROOT',    __DIR__ . '/../');
+define('CONFIG_CAKE',       CONFIG_WEBROOT . 'vendor/lahautesociete/cakephp-1.2.12/');
+define('CONFIG_APP',        'app');
+
+
+// Gato lib
+define('GATO_LIBS', CONFIG_WEBROOT . 'vendor/lahautesociete/gato-libs/');
+
+
+// Back office
+define('CONFIG_BO_BASE_URL',    CONFIG_BASE_URL . '/bo');
+define('CONFIG_BO_WEBROOT',     CONFIG_WEBROOT . 'bo/');
+define('CONFIG_BO_CAKE',        CONFIG_CAKE);
+define('CONFIG_BO_APP',         'app');
+
+
+// Crawler
+define('CONFIG_CRAWLER_BASE_URL',   CONFIG_BASE_URL . '/crawler');
+define('CONFIG_CRAWLER_WEBROOT',    CONFIG_WEBROOT . 'crawler/');
+define('CONFIG_CRAWLER_CAKE',       CONFIG_CAKE);
+define('CONFIG_CRAWLER_APP',        'app');
+
+
+// BDD
+define('BDD_HOST',      '##BDD_HOST##');
+define('BDD_LOGIN',     '##BDD_LOGIN##');
+define('BDD_PASSWORD',  '##BDD_PASSWORD##');
+define('BDD_DATABASE',  '##BDD_DATABASE##');
+
+
+// Contact
+define('EMAIL_FROM', '##EMAIL_FROM##');
+
+
+// ReCaptcha
+define('RECAPTCHA_SITE_KEY',    '##RECAPTCHA_SITE_KEY##');
+define('RECAPTCHA_SECRET_KEY',  '##RECAPTCHA_SECRET_KEY##');
+
+
+// SMTP
+$smtpOptions = array_filter([
+    'port' =>       '##SMTP_PORT##',
+    'timeout' =>    '##SMTP_TIMEOUT##',
+    'host' =>       '##SMTP_HOST##',
+    'username' =>   '##SMTP_USERNAME##',
+    'password' =>   '##SMTP_PASSWORD##',
+]);
+
+
+// Langues
+require('config_languages.php');

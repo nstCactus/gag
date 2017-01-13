@@ -1,0 +1,15 @@
+{
+  "config": {
+    "secure-http": false,
+    "vendor-dir": "www/vendor"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.lahautesociete.int"
+    }
+  ],
+  "require": {
+    "lahautesociete/gato-libs": ">=1.9.0"
+  }
+}

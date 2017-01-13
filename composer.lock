@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3453241d3128fd2967ee806c7b8d657c",
+    "packages": [
+        {
+            "name": "lahautesociete/cakephp-1.2.12",
+            "version": "1.2.12",
+            "source": {
+                "type": "git",
+                "url": "http://gitlab.lahautesociete.int/lahautesociete/cakephp-1.2.12",
+                "reference": "3612dbdba799e940357cf71bcb3ad82a09461e7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packages.lahautesociete.int/dist/lahautesociete/cakephp-1-2-12/lahautesociete-cakephp-1-2-12-1.2.12-b7551a.zip",
+                "reference": "3612dbdba799e940357cf71bcb3ad82a09461e7d",
+                "shasum": "c05407e104f67f96946ba2d6e42968b5252cebf8"
+            },
+            "require": {
+                "php": ">=4.0"
+            },
+            "type": "library",
+            "description": "CakePHP 1.2.12",
+            "time": "2016-11-15T07:00:50+00:00"
+        },
+        {
+            "name": "lahautesociete/gato-libs",
+            "version": "dev-cake-1.3",
+            "source": {
+                "type": "git",
+                "url": "/Users/sbooob/Projets/LHS/lhs/gato-libs/",
+                "reference": "3e2388545f23bb6abd1f438f3870a27b6d069be6"
+            },
+            "require": {
+                "lahautesociete/cakephp-1.2.12": "*"
+            },
+            "type": "library",
+            "description": "Gato library for CakePHP 1.2.x",
+            "time": "2017-01-13 10:35:28"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "lahautesociete/gato-libs": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,75 @@
+.ComponentControl {
+    position:    fixed;
+    display:     flex;
+    bottom:      0;
+    left:        0;
+    width:       100%;
+    padding:     0;
+    overflow-x:  auto;
+    font-family: sans-serif;
+    font-size:   12px;
+    margin-left: -1px;
+}
+
+.ComponentControl_field {
+    min-width:      80px;
+    list-style:     none;
+    display:        flex;
+    flex:           1;
+    flex-direction: column-reverse;
+}
+
+.ComponentControl_fieldName {
+    background:     #008890;
+    padding:        5px 10px;
+    height:         28px;
+    font-weight:    bold;
+    text-transform: capitalize;
+    color:          white;
+    text-overflow:  ellipsis;
+    overflow:       hidden;
+    border:         1px solid black;
+    border-bottom:  0;
+    border-top:     0;
+    margin-right:   -1px;
+}
+
+.ComponentControl_values {
+    list-style:    none;
+    padding:       0;
+    border:        1px solid black;
+    border-bottom: 0;
+    margin-right:  -1px;
+}
+
+.ComponentControl_valueLink {
+    padding:         5px 10px;
+    display:         block;
+    text-decoration: none;
+    color:           black;
+    border-bottom:   1px solid #E4E4E4;
+    white-space:     nowrap;
+    text-overflow:   ellipsis;
+    font-size:       13px;
+    overflow:        hidden;
+}
+
+.ComponentControl_value {
+    background: white;
+}
+
+.ComponentControl_value-active {
+    background-color: #FFFF93;
+}
+
+.ComponentControl_field:last-child {
+    .ComponentControl_fieldName,
+    .ComponentControl_values {
+        border-right: 0;
+        margin-right: 0;
+    }
+}
+
+.ComponentControl-hidden {
+    display: none;
+}

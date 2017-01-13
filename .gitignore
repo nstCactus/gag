@@ -1,0 +1,50 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+
+### CakePHP template
+
+/app/tmp/cache/*
+!/app/tmp/cache/.gitkeep
+/app/tmp/logs/*
+!/app/tmp/logs/.gitkeep
+/app/config/core.php
+/app/config/database.php
+/vendors/*
+
+
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+www/.htaccess
+www/app/tmp/
+www/app/views/elements/components/
+www/bo/.htaccess
+www/bo/app/tmp/*
+!www/bo/app/tmp/cache/.gitkeep
+!www/bo/app/tmp/logs/.gitkeep
+www/bo/css/style.css
+www/config/config.php
+www/revision.txt
+www/robots.txt
+www/static/scripts/script.js
+www/static/styles/
+www/bo/js/closure-compiler/closure_compiler.js
+www/bo/js/closure-compiler/closure_compiler.hash
+www/media
+www/resize
+
+www/vendor/
+
+# CSSComb config file.
+.csscomb.json
+
+# Local phing build files
+/build/properties/local.properties
+/build/robots/robots.local.txt
+/build/config/config_languages.local.php

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GAG" basedir="." default="build">
+
+	<!-- Fichier de propriétés -->
+
+	<property file="${ws}/build/properties/${build_type}.properties"/>
+
+	<!-- Build ! -->
+
+	<target name="build" description="Prepare for build">
+
+		<!-- Initialisation de la config -->
+		<copy file="${ws}/build/config/config.php.dist" tofile="${ws}/www/config/config.php" overwrite="true">
+			<filterchain>
+				<replacetokens begintoken="##" endtoken="##">
+					<!-- REVISION / TAG -->
+					<token key="SVN_REVISION" value="${revision}" />
+
+					<!-- CORE -->
+					<token key="CORE_DEBUG" value="${CORE_DEBUG}" />
+					<token key="CORE_CACHE_DISABLE" value="${CORE_CACHE_DISABLE}" />
+					<token key="CACHE_REQUEST_ENABLE" value="${CACHE_REQUEST_ENABLE}" />
+
+					<!-- STATIC -->
+					<token key="CORE_CACHE_STATIC" value="${CORE_CACHE_STATIC}" />
+
+					<!-- FRONT -->
+					<token key="CONFIG_BASE_URL" value="${CONFIG_BASE_URL}" />
+
+					<!-- BDD -->
+					<token key="BDD_HOST" value="${BDD_HOST}" />
+					<token key="BDD_LOGIN" value="${BDD_LOGIN}" />
+					<token key="BDD_PASSWORD" value="${BDD_PASSWORD}" />
+					<token key="BDD_DATABASE" value="${BDD_DATABASE}" />
+
+					<token key="SMTP_PORT" value="${SMTP_PORT}" />
+					<token key="SMTP_TIMEOUT" value="${SMTP_TIMEOUT}" />
+					<token key="SMTP_HOST" value="${SMTP_HOST}" />
+					<token key="SMTP_USERNAME" value="${SMTP_USERNAME}" />
+					<token key="SMTP_PASSWORD" value="${SMTP_PASSWORD}" />
+					<token key="EMAIL_FROM" value="${EMAIL_FROM}" />
+
+					<!-- ReCaptcha -->
+					<token key="RECAPTCHA_SITE_KEY" value="${RECAPTCHA_SITE_KEY}" />
+					<token key="RECAPTCHA_SECRET_KEY" value="${RECAPTCHA_SECRET_KEY}" />
+
+					<!-- TRANSIT -->
+					<token key="TRANSIT_CACHE_ENABLE" value="${TRANSIT_CACHE_ENABLE}" />
+
+				</replacetokens>
+			</filterchain>
+		</copy>
+
+
+		<!-- Config languages -->
+		<copy file="${ws}/build/config/config_languages.${build_type}.php" tofile="${ws}/www/config/config_languages.php" overwrite="true" />
+
+		<!-- Htaccess : Front -->
+		<copy file="${ws}/build/htaccess/www/.htaccess" tofile="${ws}/www/.htaccess" overwrite="true">
+			<filterchain>
+				<replacetokens begintoken="##" endtoken="##">
+					<token key="REWRITE_BASE" value="${REWRITE_BASE}" />
+				</replacetokens>
+			</filterchain>
+		</copy>
+
+		<!-- Htaccess : Back -->
+		<copy file="${ws}/build/htaccess/www/bo/.htaccess" tofile="${ws}/www/bo/.htaccess" overwrite="true">
+			<filterchain>
+				<replacetokens begintoken="##" endtoken="##">
+					<token key="REWRITE_BASE" value="${REWRITE_BASE}" />
+				</replacetokens>
+			</filterchain>
+		</copy>
+
+
+		<!-- Robots.txt -->
+		<copy file="${ws}/build/robots/robots.${build_type}.txt" tofile="${ws}/www/robots.txt" overwrite="true"/>
+
+
+		<!-- Ecrire le numéro de révision -->
+
+		<echo>Ecrire le numéro de révision</echo>
+		<echo
+			file="${ws}/www/revision.txt"
+			msg="${revision}"
+		/>
+
+
+		<!-- Fini ! :D -->
+
+	</target>
+</project>

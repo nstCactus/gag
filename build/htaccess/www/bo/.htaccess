@@ -1,0 +1,19 @@
+Options FollowSymLinks
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Resize No cache No Save
+    RewriteCond %{QUERY_STRING} ^(nocache|nosave)$
+    RewriteRule ^((media|static|resize).*)$ resizer.php?params=$1 [QSA,L]
+
+    # Resizer
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^((media|static|resize)/.*[png|jpg|jpeg|gif])$ resizer.php?params=$1 [QSA,L]
+
+    # Redirection sur CakePHP
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>

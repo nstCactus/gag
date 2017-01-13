@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<files>
+		<item>livepipe/livepipe.js</item>		
+		<item>livepipe/tabs.js</item>		
+		<item>cookie.js</item>		
+		<item>datepicker_prototype/datepicker.js</item>
+		<item>datepicker_prototype/prototype-date-extensions.js</item>
+		<item>datepicker_prototype/prototype-base-extensions.js</item>
+		<item>datepicker_prototype/datepicker-locale-fr_FR.js</item>
+		<item>jquery-plugins/</item>
+		<item>bo_js_validation.js</item>
+		<item>js_tabs_i18n.js</item>
+		<item>modal.js</item>
+		<item>map_one_marker.js</item>
+		<item>bo.js</item>
+		<item>multiple.js</item>
+		<item>select_autocomplete.js</item>
+		<item>multiple_media.js</item>
+		<item>slug.js</item>
+		<item>login_box.js</item>
+		<item>videos-plateform/vimeo_select.js</item>
+		<item>elements/duplicate_language.js</item>
+		<item>cms_container/</item>
+		<item>json_editor.js</item>
+	</files>
+	<encoding></encoding>
+	<cache>true</cache>
+</root>
