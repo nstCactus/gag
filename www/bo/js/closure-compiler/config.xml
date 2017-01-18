@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<files>
-		<item>livepipe/livepipe.js</item>		
-		<item>livepipe/tabs.js</item>		
-		<item>cookie.js</item>		
+		<item>livepipe/livepipe.js</item>
+		<item>livepipe/tabs.js</item>
+		<item>cookie.js</item>
 		<item>datepicker_prototype/datepicker.js</item>
 		<item>datepicker_prototype/prototype-date-extensions.js</item>
 		<item>datepicker_prototype/prototype-base-extensions.js</item>
@@ -22,6 +22,7 @@
 		<item>videos-plateform/vimeo_select.js</item>
 		<item>elements/duplicate_language.js</item>
 		<item>cms_container/</item>
+		<item>tree/</item>
 		<item>json_editor.js</item>
 	</files>
 	<encoding></encoding>

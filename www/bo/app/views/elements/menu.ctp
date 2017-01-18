@@ -14,6 +14,19 @@ $options = [
             ],
         ],
 
+        // ==== Catalogue ====
+        [
+            'title' => __("Catalogue", true),
+            'elements' => [
+                [
+                    'title' => __("Catégories de produits", true),
+                    'controller' => 'product_categories',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
+            ],
+        ],
+
         // ==== Superuser ====
         [
             'title' => __("Back-office management", true),
