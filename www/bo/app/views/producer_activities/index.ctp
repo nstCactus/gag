@@ -1,6 +1,6 @@
 <?php
 $options = [
-    'title'   => 'ProducerActivities',
+    'title'   => 'Activités des producteurs',
     'actions' => [
         'addActionTitle' => __("Ajouter une activité", true),
     ],

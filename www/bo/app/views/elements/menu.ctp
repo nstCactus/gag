@@ -30,6 +30,12 @@ $options = [
                     'action' => 'index',
                     'admin' => true,
                 ],
+                [
+                    'title' => __('Producteurs', true),
+                    'controller' => 'producers',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
             ],
         ],
 
