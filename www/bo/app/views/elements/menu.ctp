@@ -3,10 +3,10 @@ $options = [
     'menu' => [
         // ==== Content ====
         [
-            'title' => __("Site content", true),
+            'title' => __('Contenu du site', true),
             'elements' => [
                 [
-                    'title' => __("Pages", true),
+                    'title' => __('Pages', true),
                     'controller' => 'cms_nodes',
                     'action' => 'index',
                     'admin' => true,
@@ -16,11 +16,17 @@ $options = [
 
         // ==== Catalogue ====
         [
-            'title' => __("Catalogue", true),
+            'title' => __('Catalogue', true),
             'elements' => [
                 [
-                    'title' => __("Catégories de produits", true),
+                    'title' => __('Catégories de produits', true),
                     'controller' => 'product_categories',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
+                [
+                    'title' => __('Activités des producteurs', true),
+                    'controller' => 'producer_activities',
                     'action' => 'index',
                     'admin' => true,
                 ],
@@ -29,35 +35,35 @@ $options = [
 
         // ==== Superuser ====
         [
-            'title' => __("Back-office management", true),
+            'title' => __('Gestion du Back-office', true),
             'elements' => [
                 [
-                    'title' => __("Users", true),
+                    'title' => __('Utilisateurs', true),
                     'controller' => 'users',
                     'action' => 'index',
                 ],
                 [
-                    'title' => __("Groups", true),
+                    'title' => __('Groupes', true),
                     'controller' => 'groupes',
                     'action' => 'index',
                 ],
                 [
-                    'title' => __("Autorisations", true),
+                    'title' => __('Autorisations', true),
                     'controller' => 'acls',
                     'action' => 'index',
                 ],
                 [
-                    'title' => __("Languages", true),
+                    'title' => __('Gestion de langues', true),
                     'controller' => 'languages',
                     'action' => 'index',
                 ],
                 [
-                    'title' => __("Translations", true),
+                    'title' => __('Dico', true),
                     'controller' => 'dictionaries',
                     'action' => 'index',
                 ],
                 [
-                    'title' => __("Configuration", true),
+                    'title' => __('Configuration', true),
                     'controller' => 'blocks',
                     'action' => 'index',
                 ],
