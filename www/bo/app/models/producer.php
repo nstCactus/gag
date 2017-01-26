@@ -9,7 +9,7 @@
 class Producer extends AppModel
 {
     var $name = 'Producer';
-    var $displayField = 'name';
+    var $displayField = 'corporate_name';
 
     var $actsAs = [
         'Slug' => [ 'from' => 'corporate_name' ],

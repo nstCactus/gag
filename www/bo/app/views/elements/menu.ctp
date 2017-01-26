@@ -19,6 +19,18 @@ $options = [
             'title' => __('Catalogue', true),
             'elements' => [
                 [
+                    'title' => __('Produits', true),
+                    'controller' => 'products',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
+                [
+                    'title' => __('Producteurs', true),
+                    'controller' => 'producers',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
+                [
                     'title' => __('Catégories de produits', true),
                     'controller' => 'product_categories',
                     'action' => 'index',
@@ -27,12 +39,6 @@ $options = [
                 [
                     'title' => __('Activités des producteurs', true),
                     'controller' => 'producer_activities',
-                    'action' => 'index',
-                    'admin' => true,
-                ],
-                [
-                    'title' => __('Producteurs', true),
-                    'controller' => 'producers',
                     'action' => 'index',
                     'admin' => true,
                 ],
