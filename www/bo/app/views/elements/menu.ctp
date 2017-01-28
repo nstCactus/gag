@@ -31,6 +31,18 @@ $options = [
                     'admin' => true,
                 ],
                 [
+                    'title' => __('Unités', true),
+                    'controller' => 'product_units',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
+                [
+                    'title' => __('Prix', true),
+                    'controller' => 'product_prices',
+                    'action' => 'index',
+                    'admin' => true,
+                ],
+                [
                     'title' => __('Catégories de produits', true),
                     'controller' => 'product_categories',
                     'action' => 'index',

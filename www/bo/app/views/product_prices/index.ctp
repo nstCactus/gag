@@ -1,18 +1,31 @@
 <?php
 $options = [
-    'title'   => 'Unités',
+    'title'   => 'Prix des produits',
     'actions' => [
-        'addActionTitle' => __("Ajouter une unité", true),
+        'addActionTitle' => __("Ajouter un prix", true),
     ],
-    'model'   => 'ProductUnit',
-    'data'    => $productUnits,
+    'model'   => 'ProductPrice',
+    'data'    => $productPrices,
     'fields'  => [
-        'id'   => [
+        'id'              => [
             'label' => __("Id", true),
         ],
-        'name' => [
-            'label' => __("Nom", true),
-            'width' => '100%',
+        'price'           => [
+            'label' => __("Prix", true),
+        ],
+        'min_quantity'    => [
+            'label' => __("Quantité min", true),
+        ],
+        'max_quantity'    => [
+            'label' => __("Quantité max", true),
+        ],
+        'product_id'      => [
+            'label'  => __("Produit", true),
+            'values' => $products,
+        ],
+        'product_unit_id' => [
+            'label'  => __("Unité", true),
+            'values' => $productUnits,
         ],
     ],
     'filters' => $filters,
