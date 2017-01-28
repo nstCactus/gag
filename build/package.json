@@ -8,7 +8,7 @@
     "grunt-contrib-copy":       "^1.0.0",
     "grunt-contrib-jshint":     "^1.0.0",
     "grunt-contrib-less":       "^1.2.0",
-    "grunt-contrib-uglify":     "^1.0.1",
+    "grunt-contrib-uglify":     "^2.0.0",
     "grunt-contrib-watch":      "^1.0.0",
     "grunt-notify":             "^0.4.5",
     "grunt-ssh-deploy-release": "^1.0.8",

@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="GAG" basedir="." default="build">
-
 	<!-- Fichier de propriétés -->
-
 	<property file="${ws}/build/properties/${build_type}.properties"/>
 
 	<!-- Build ! -->
-
 	<target name="build" description="Prepare for build">
 
 		<!-- Initialisation de la config -->
@@ -79,15 +76,12 @@
 
 
 		<!-- Ecrire le numéro de révision -->
-
 		<echo>Ecrire le numéro de révision</echo>
 		<echo
 			file="${ws}/www/revision.txt"
 			msg="${revision}"
 		/>
 
-
 		<!-- Fini ! :D -->
-
 	</target>
 </project>

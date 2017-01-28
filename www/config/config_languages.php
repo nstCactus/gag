@@ -1,8 +1,8 @@
 <?php
 
-// Main host
-$MAIN_HOST = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '127.0.0.1';
-
+define('URL_DOMAIN_BASED', true);
 
 // Liste des langues actives sur le front
-$LANGUAGES_ENABLED = [ 'fr' ];
+$LANGUAGES_ENABLED = [
+    'fr' => [ 'mainHost' => 'gag.yohann-bianchi.ovh' ],
+];

@@ -45,6 +45,9 @@ www/vendor/
 .csscomb.json
 
 # Local phing build files
-/build/properties/local.properties
-/build/robots/robots.local.txt
-/build/config/config_languages.local.php
+/build/properties/*.properties
+/build/robots/robots.*.txt
+/build/config/config_languages.*.php
+
+# Sensible data
+build/grunt_config/_secrets.js
