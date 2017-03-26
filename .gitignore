@@ -21,15 +21,12 @@ npm-debug.log*
 # Dependency directories
 node_modules
 
-www/.htaccess
-www/app/tmp/
+\www/app/tmp/
 www/app/views/elements/components/
-www/bo/.htaccess
 www/bo/app/tmp/*
 !www/bo/app/tmp/cache/.gitkeep
 !www/bo/app/tmp/logs/.gitkeep
 www/bo/css/style.css
-www/config/config.php
 www/revision.txt
 www/robots.txt
 www/static/scripts/script.js
