@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3453241d3128fd2967ee806c7b8d657c",
+    "content-hash": "e9d1a1ff8be1986d89ce2c7b2b462796",
     "packages": [
         {
             "name": "lahautesociete/cakephp-1.2.12",
@@ -29,26 +29,30 @@
         },
         {
             "name": "lahautesociete/gato-libs",
-            "version": "dev-cake-1.3",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
-                "url": "/Users/sbooob/Projets/LHS/lhs/gato-libs/",
-                "reference": "3e2388545f23bb6abd1f438f3870a27b6d069be6"
+                "url": "http://gitlab.lahautesociete.int/lahautesociete/gato-libs",
+                "reference": "bcee9a81ada107acda16a5d88cbf5a2188dab397"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packages.lahautesociete.int/dist/lahautesociete/gato-libs/lahautesociete-gato-libs-1.14.0-e8931a.zip",
+                "reference": "bcee9a81ada107acda16a5d88cbf5a2188dab397",
+                "shasum": "0a5db9cc670d759b8a31ce3df40d78a2069d7a5d"
             },
             "require": {
                 "lahautesociete/cakephp-1.2.12": "*"
             },
             "type": "library",
             "description": "Gato library for CakePHP 1.2.x",
-            "time": "2017-01-13 10:35:28"
+            "time": "2017-02-20T09:47:22+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "lahautesociete/gato-libs": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
