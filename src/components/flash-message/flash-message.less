@@ -1,0 +1,41 @@
+/**
+ * @author nstCactus
+ * @date 03/04/17 23:44
+ */
+.FlashMessage {
+    position: fixed;
+
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: 400px;
+
+    padding: 1em;
+
+    border: 1px solid currentColor;
+    border-radius: 5px;
+
+    color: gray;
+    background: lightgrey;
+
+    &-success {
+        color: forestgreen;
+        background: palegreen;
+    }
+
+    &-info {
+        color: darkblue;
+        background: lightskyblue;
+    }
+
+    &-warning {
+        color:      orange;
+        background: #fbe4d1;
+    }
+
+    &-error {
+        color:      red;
+        background: #ffc7ca;
+    }
+}

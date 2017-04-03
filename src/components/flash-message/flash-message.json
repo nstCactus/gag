@@ -1,0 +1,10 @@
+{
+  "layout": "main",
+  "fields": {
+    "message": [
+      "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "Slip"
+    ],
+    "severity": [ "success", "error", "warning", "info" ]
+  }
+}
