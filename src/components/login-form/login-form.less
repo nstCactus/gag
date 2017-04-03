@@ -1,0 +1,54 @@
+/**
+ * @author nstCactus
+ * @date 01/04/17 13:49
+ */
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 300px;
+
+    margin: 0 auto;
+
+    box-shadow: 0 0 5px lightgrey;
+    border-radius: 5px;
+
+    &_fieldset {
+        border: none;
+        padding: 1em;
+    }
+
+    &_legend {
+        position: relative;
+        top: -10px;
+
+        background: white;
+    }
+
+    &_label{
+        display: block;
+    }
+
+    &_input {
+        width: 100%;
+
+        margin-bottom: 1em;
+
+        font-size: 20px;
+    }
+
+    &_button {
+        height: 48px;
+
+        border: none;
+        border-radius: 0 0 5px 5px;
+
+        background: forestgreen;
+
+        font-weight: bold;
+        color: white;
+
+        cursor: pointer;
+    }
+}
