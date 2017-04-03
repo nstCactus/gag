@@ -3,7 +3,7 @@
 /**
  * Home Controller
  *
- * @author Maxime Colin
+ * @author nstCactus<nstCactus@gmail.com>
  *
  */
 class HomeController extends AppController

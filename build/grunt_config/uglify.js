@@ -12,7 +12,7 @@ var uglifyProjectJSFiles = [
 
 // Liste des libs js
 var uglifyLibsJSFiles = [
-    '<%= env.jsSrc %>/libs/**/*.js',
+    '<%= env.projectRoot %>/build/node_modules/jquery/dist/jquery.js',
 ];
 
 module.exports = {
