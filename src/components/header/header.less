@@ -1,0 +1,49 @@
+.Header {
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    box-shadow: 0 0 5px lightgrey;
+
+    &_siteTitle {
+        margin: 0;
+
+        &::before {
+            content: "logo";
+            display: inline-block;
+
+            width: 48px;
+            height: 48px;
+
+            margin-right: .5em;
+
+            vertical-align: middle;
+
+            background: chartreuse;
+
+            // TODO: Remove this when logo is there
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 48px;
+            text-align: center;
+        }
+    }
+
+    &_menu {
+        display: flex;
+
+        flex-grow: 1;
+
+        align-items: center;
+    }
+
+    &_rightLink {
+        display: flex;
+
+        align-items: center;
+    }
+}
