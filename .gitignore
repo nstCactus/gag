@@ -43,8 +43,6 @@ www/vendor/
 
 # Local phing build files
 /build/properties/*.properties
-/build/robots/robots.*.txt
-/build/config/config_languages.*.php
 
 # Sensible data
 build/grunt_config/_secrets.js
